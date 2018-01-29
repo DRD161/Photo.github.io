@@ -1,4 +1,4 @@
-// handle links with @href started with '#' only
+// handle links with href starting with '#' only
 $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
     var id = $(this).attr('href');
@@ -9,7 +9,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
         return;
     }
 
-    // prevent standard hash navigation (avoid blinking in IE)
+    // prevent standard avigation behvaior
     e.preventDefault();
 
     // top position relative to the document
